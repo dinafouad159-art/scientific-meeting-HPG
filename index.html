@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="HPG Scientific Meeting invitation">
+  <title>HPG Scientific Meeting</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video autoplay muted loop playsinline id="bg-video" poster="assets/video-poster.jpg"><source src="assets/background.mp4" type="video/mp4"></video>
+  <div class="page-wash"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#top" aria-label="HPG home">
+      <img src="assets/logo.png" class="logo" alt="HPG logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    </a>
+    <a href="#rsvp" class="nav-link">Confirm attendance</a>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="orb"></div>
+      <p class="eyebrow reveal">Exclusive scientific gathering · 2026</p>
+      <p class="invitation reveal">You are cordially invited to</p>
+      <h1 class="reveal">HPG <em>Scientific</em><br>Meeting</h1>
+      <p class="lead reveal">An evening of insight, dialogue and meaningful connections—bringing together distinguished healthcare professionals.</p>
+      <div class="actions reveal">
+        <a class="btn gold" href="#details">Explore the event ↓</a>
+        <a class="btn outline" id="calendarLink" target="_blank" rel="noopener">Add to calendar</a>
+      </div>
+      <div class="event-strip glass reveal">
+        <div><small>Date</small><strong>Friday, 07 August 2026</strong></div>
+        <div><small>Time</small><strong>07:00 PM — 10:00 PM</strong></div>
+        <div><small>Venue</small><strong>Pyramisa Suites Hotel · Dokki</strong></div>
+      </div>
+    </section>
+
+    <section class="section countdown-wrap" id="details">
+      <div><span class="kicker">Mark the date</span><h2>The conversation<br>begins in</h2></div>
+      <div class="countdown" id="countdown" aria-label="Countdown to event">
+        <div class="glass"><strong id="days">00</strong><small>Days</small></div>
+        <div class="glass"><strong id="hours">00</strong><small>Hours</small></div>
+        <div class="glass"><strong id="minutes">00</strong><small>Minutes</small></div>
+        <div class="glass"><strong id="seconds">00</strong><small>Seconds</small></div>
+      </div>
+    </section>
+
+    <section class="section speaker">
+      <div class="portrait">
+        <img src="assets/speaker.jpg" alt="Professor Mohamed Hussein Mostafa" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <span hidden>MH</span>
+      </div>
+      <div>
+        <span class="kicker">Guest speaker</span>
+        <h2>Professor Mohamed<br>Hussein Mostafa</h2>
+        <i class="gold-rule"></i>
+        <p>Professor of Medicine and distinguished consultant, joining us to share a forward-looking perspective on excellence in patient care and clinical practice.</p>
+        <div class="tags"><span>Professor of Medicine</span><span>Senior Consultant</span><span>Healthcare Leader</span></div>
+      </div>
+    </section>
+
+    <section class="section venue">
+      <div class="venue-copy glass">
+        <span class="kicker">The venue</span><h2>Pyramisa Suites<br>Hotel Cairo</h2>
+        <p>60 Giza Street, Dokki, Giza<br>An elegant setting in the heart of Cairo.</p>
+        <a class="btn gold" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Pyramisa+Suites+Hotel+Dokki">Open in Google Maps ↗</a>
+      </div>
+      <iframe
+  class="map"
+  title="Pyramisa Suites Hotel Map"
+  src="https://maps.google.com/maps?q=Pyramisa%20Suites%20Hotel%20Dokki&t=&z=15&ie=UTF8&iwloc=&output=embed"
+  width="100%"
+  height="540"
+  style="border:0;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  allowfullscreen>
+</iframe>
+
+    </section>
+
+    <section class="section rsvp" id="rsvp">
+      <div><span class="kicker">Your presence matters</span><h2>Kindly confirm<br>your attendance</h2><p>Please respond by 01 August 2026. We look forward to welcoming you.</p></div>
+      <form class="glass" id="rsvpForm">
+        <label>Full name<input name="name" required placeholder="Your full name"></label>
+        <div class="form-row"><label>Email address<input name="email" type="email" required placeholder="name@example.com"></label><label>Phone number<input name="phone" type="tel" required placeholder="+20"></label></div>
+        <label>Will you be attending?<select name="attendance" required><option value="" selected disabled>Select your response</option><option>Yes, I will attend</option><option>Unfortunately, I cannot attend</option></select></label>
+        <button class="btn gold" type="submit">Confirm response</button>
+        <p class="form-note" id="formMessage">See You Soon.</p>
+      </form>
+    </section>
+
+    <section class="section sponsors">
+      <span class="kicker">With the support of</span>
+      <div><img src="assets/logo.png" alt="HPG"></div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 HPG Scientific Meeting</span><span>Cairo · Egypt</span><a href="mailto:events@hpg.com">events@hpg.com</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
