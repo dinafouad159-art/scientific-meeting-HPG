@@ -51,3 +51,34 @@ form.addEventListener("submit", async (event) => {
     message.textContent = "Could not send your response. Please try again.";
   }
 });
+/* ========================================
+   ENVELOPE OPENING INTRO
+======================================== */
+
+const envelopeIntro = document.getElementById("envelopeIntro");
+const openInvitationButton = document.getElementById("openInvitation");
+
+if (envelopeIntro && openInvitationButton) {
+  openInvitationButton.addEventListener("click", function () {
+
+    // منع الضغط أكثر من مرة
+    if (envelopeIntro.classList.contains("opening")) {
+      return;
+    }
+
+    // تشغيل حركة فتح الظرف
+    envelopeIntro.classList.add("opening");
+
+    // إظهار الموقع بعد خروج كارت الدعوة
+    setTimeout(function () {
+      envelopeIntro.classList.add("intro-finished");
+      document.body.classList.remove("intro-locked");
+    }, 2200);
+
+    // إزالة شاشة الانترو بعد انتهاء الحركة
+    setTimeout(function () {
+      envelopeIntro.remove();
+    }, 3400);
+
+  });
+}
