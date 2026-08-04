@@ -12,7 +12,51 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="intro-locked">
+  <!-- Envelope Intro -->
+<div class="envelope-intro" id="envelopeIntro">
+
+  <div class="intro-glow"></div>
+
+  <p class="intro-caption">A special invitation awaits you</p>
+
+  <button
+    class="envelope-button"
+    id="openInvitation"
+    type="button"
+    aria-label="Open invitation">
+
+    <div class="envelope">
+
+      <div class="envelope-back"></div>
+
+      <div class="invitation-card">
+        <span>YOU ARE INVITED</span>
+
+        <strong>
+          HPG Scientific<br>
+          Meeting
+        </strong>
+
+        <small>07 AUGUST 2026</small>
+      </div>
+
+      <div class="envelope-left"></div>
+      <div class="envelope-right"></div>
+      <div class="envelope-bottom"></div>
+      <div class="envelope-flap"></div>
+
+      <div class="wax-seal">
+        <span>OPEN</span>
+      </div>
+
+    </div>
+
+  </button>
+
+  <p class="open-hint">Tap to open</p>
+
+</div>
   <video autoplay muted loop playsinline id="bg-video" poster="assets/video-poster.jpg"><source src="assets/background.mp4" type="video/mp4"></video>
   <div class="page-wash"></div>
 
