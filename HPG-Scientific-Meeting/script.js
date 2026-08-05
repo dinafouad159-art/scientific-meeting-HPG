@@ -1,5 +1,5 @@
 // Edit this date/time if the event changes. Cairo is UTC+3 in August.
-const EVENT_DATE = new Date("2026-08-07T19:00:00+03:00");
+const EVENT_DATE = new Date("2026-08-07T14:00:00+03:00");
 
 function updateCountdown() {
   const gap = Math.max(0, EVENT_DATE.getTime() - Date.now());
@@ -19,7 +19,7 @@ setInterval(updateCountdown, 1000);
 const calendarParams = new URLSearchParams({
   action: "TEMPLATE",
   text: "HPG Scientific Meeting",
-  dates: "20260807T160000Z/20260807T190000Z",
+  dates: "20260807T110000Z/20260807T130000Z",
   details: "An exclusive scientific evening with healthcare leaders.",
   location: "Pyramisa Suites Hotel, Dokki, Giza"
 });
