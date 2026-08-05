@@ -64,7 +64,12 @@
     <a class="brand" href="/scientific-meeting-HPG/#top" aria-label="HPG home">
       <img src="assets/logo.png" class="logo" alt="HPG logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
     </a>
-    <a href="/scientific-meeting-HPG/#rsvp" class="nav-link">Confirm attendance</a>
+<a
+  href="#rsvp"
+  class="nav-link"
+  onclick="event.preventDefault(); document.getElementById('rsvp').scrollIntoView({ behavior: 'smooth' });">
+  Confirm attendance
+</a>
   </header>
 
   <main>
@@ -75,7 +80,12 @@
       <h1 class="reveal">HPG <em>Scientific</em><br>Meeting</h1>
       <p class="lead reveal">An evening of insight, dialogue and meaningful connections—bringing together distinguished healthcare professionals.</p>
       <div class="actions reveal">
-        <a class="btn gold" href="/scientific-meeting-HPG/#details">Explore the event ↓</a>
+        <a
+  class="btn gold"
+  href="#details"
+  onclick="event.preventDefault(); document.getElementById('details').scrollIntoView({ behavior: 'smooth' });">
+  Explore the event ↓
+</a>
         <a class="btn outline" id="calendarLink" target="_blank" rel="noopener">Add to calendar</a>
       </div>
       <div class="event-strip glass reveal">
