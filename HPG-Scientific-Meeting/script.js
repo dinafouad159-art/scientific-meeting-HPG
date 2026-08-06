@@ -31,7 +31,7 @@ document.querySelectorAll(".reveal").forEach((element, index) => {
 
 // RSVP: paste your Formspree endpoint below, for example:
 // const FORMSPREE_ENDPOINT = "https://formspree.io/f/xxxxxxxx";
-const FORMSPREE_ENDPOINT = "";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xdenovpn";
 const form = document.getElementById("rsvpForm");
 const message = document.getElementById("formMessage");
 form.addEventListener("submit", async (event) => {
